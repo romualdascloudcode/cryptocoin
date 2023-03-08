@@ -1,0 +1,387 @@
+@import "Variables.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 4.5rem 2rem 4.5rem !important;
+}
+
+.search {
+  margin: 2rem 0rem 3rem 0rem;
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.search h1 {
+  font-size: 2.5rem;
+  padding-right: 2rem;
+}
+
+.text {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.input {
+  padding-left: 16px;
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #39405e;
+  color: var(--primary-color);
+  font-size: 1rem;
+  max-width: 100%;
+  width: 400px;
+}
+
+.input::placeholder {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+.mobileContainer {
+  max-width: 1600px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.tableTitles {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.tableTitles p:nth-child(3) {
+  padding-left: 0.5rem;
+}
+
+.tableTitles p:nth-child(4) {
+  padding-left: 1.6rem;
+}
+
+.tableTitles p:nth-child(5) {
+  display: flex;
+  justify-content: center;
+}
+
+.coinContainer {
+  width: 100%;
+}
+
+.coinContainer:hover {
+  background-color: var(--table-titles-bg-color) !important;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  align-items: center;
+  min-height: 90px;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.row a {
+  color: var(--table-primary-color) !important;
+}
+
+.row a:hover {
+  color: var(--green) !important;
+}
+
+.coinWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.row h1 {
+  font-size: 16px;
+  margin-right: 10px;
+  padding-top: 0.4rem;
+}
+
+.row img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.symbol {
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.red {
+  color: var(--red);
+}
+
+.green {
+  color: var(--green);
+}
+
+.chart {
+  max-height: 130px;
+  z-index: 999;
+}
+
+.paginationBttns {
+  width: 100%;
+  min-height: 40px;
+  margin: 2rem 0rem 5rem 0rem;
+  font-size: 0.9rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  color: var(--table-primary-color);
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: var(--table-primary-color);
+  background-color: var(--button);
+}
+
+.paginationActive a {
+  color: var(--table-primary-color);
+  background-color: var(--button);
+}
+
+.paginationDisabled a {
+  color: var(--pagination-disabled-color) !important;
+  background-color: var(--pagination-bg);
+  cursor: default;
+}
+
+.paginationDisabled a:hover {
+  color: var(--pagination-disabled-color);
+  background-color: var(--pagination-bg);
+}
+
+@media screen and (max-width: 1290px) {
+  .text {
+    margin-right: 0rem;
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+  }
+
+  .mobileContainer {
+    max-width: 100%;
+  }
+
+  .coinContainer {
+    justify-content: flex-start;
+  }
+
+  .coinContainer:hover {
+    background-color: #090b22 !important;
+  }
+
+  .paginationBttns {
+    min-width: 500px;
+    margin: 2rem 0rem 5rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    padding: 2rem !important;
+  }
+
+  .coinWrapper {
+    max-width: 130px;
+    width: 100%;
+    min-height: 40px;
+  }
+
+  .search {
+    flex-direction: column;
+  }
+  .search h1 {
+    font-size: 1.8rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+  }
+
+  .coinContainer {
+    width: 100%;
+  }
+
+  .row {
+    min-height: 80px;
+    height: 100%;
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .coinData p {
+    margin-bottom: 0rem;
+  }
+  .tableTitles {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+    display: none;
+  }
+  .coin {
+    min-width: 0px !important;
+    margin-right: 1rem;
+  }
+  .coin h1 {
+    margin-bottom: 0rem;
+  }
+  .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px !important;
+    width: 100%;
+    min-height: 40px;
+    padding-top: 1rem;
+  }
+  .volume {
+    display: none;
+  }
+  .marketcap {
+    display: none;
+  }
+
+  .percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px !important;
+    width: 100%;
+    min-height: 40px;
+    padding-top: 1rem;
+  }
+
+  .symbol {
+    display: none;
+  }
+  .chart {
+    display: none;
+  }
+  .paginationBttns {
+    min-width: 300px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .paginationBttns li {
+    padding-bottom: 2rem;
+  }
+  ol,
+  ul {
+    padding-left: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .input {
+    width: 100%;
+  }
+
+  .row {
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(84, 84, 84);
+    flex-direction: column;
+  }
+  .coinWrapper {
+    max-width: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+  .price {
+    width: 100%;
+  }
+  .percent {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tableTitles {
+    background-color: transparent;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .coinData {
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    width: 100%;
+  }
+  .price {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0rem;
+  }
+
+  .coin {
+    align-items: center;
+    min-width: 0px !important;
+    max-width: 100px;
+    width: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  .tableTitles p:nth-child(1) {
+    min-width: 170px !important;
+  }
+  .paginationBttns {
+    min-width: 230px !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .row {
+    flex-direction: column;
+  }
+  .coin {
+    margin: 0rem 0rem 1rem 0rem;
+
+    max-width: 100%;
+    display: flex;
+  }
+  .coin h1 {
+    width: 0px !important;
+  }
+  .coinData {
+    display: flex;
+
+    max-width: 100% !important;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  .price {
+    max-width: 100px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .percent {
+    max-width: 100px;
+    width: 100%;
+    text-align: start;
+  }
+}

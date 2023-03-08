@@ -1,0 +1,58 @@
+@import "Variables.css";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 900px;
+  padding: 3rem 2rem 3rem 2rem;
+  background-color: var(--footer-bg);
+}
+
+.wallet {
+  max-width: 1550px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleWrapper {
+  max-width: 500px;
+  margin-right: 4rem;
+}
+
+.titleWrapper h1 {
+  font-weight: bold;
+  padding-bottom: 2.5rem;
+  font-size: 2.5rem;
+}
+.titleWrapper p {
+  line-height: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.wallet img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.wallet .btn {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  .wallet {
+    flex-direction: column;
+    width: 100%;
+  }
+  .titleWrapper {
+    width: 100%;
+    margin-right: 0rem;
+  }
+  .titleWrapper h1 {
+    font-size: 1.8rem;
+  }
+}

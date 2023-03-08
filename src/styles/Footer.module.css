@@ -1,0 +1,117 @@
+@import "Variables.css";
+
+.container {
+  width: 100%;
+  min-height: 500px;
+  padding: 4rem 4rem 4rem 4rem;
+  background-color: var(--footer-bg);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1550px;
+  width: 100%;
+  min-height: 320px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 1.9rem;
+  max-width: 640px;
+  width: 100%;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+.socialMediaIcons {
+  display: flex;
+}
+
+.socialMediaIcons > div svg {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-right: 1rem;
+  margin-top: 4rem;
+}
+
+.infoWrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 550px;
+  width: 100%;
+}
+
+.btn {
+  width: 125px;
+  height: 45px;
+  background-color: var(--button);
+  border-radius: 0.5rem;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn a {
+  color: var(--button-txt-color) !important;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--button);
+}
+
+.secondTittleWrapper p {
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .infoWrapper {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .infoWrapper {
+    padding-top: 0rem;
+  }
+  .title h1 {
+    width: 90%;
+    font-size: 1.6rem;
+    margin: 0rem;
+  }
+
+  .title {
+    margin-bottom: 5rem;
+  }
+  .btn {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .infoWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .title h1 {
+    font-size: 1.3rem;
+  }
+}

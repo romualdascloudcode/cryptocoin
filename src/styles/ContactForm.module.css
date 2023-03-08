@@ -1,0 +1,201 @@
+@import "Variables.css";
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15rem 0rem 10rem 0rem;
+  padding-top: 3rem;
+  max-width: 1000px;
+  width: 100%;
+  min-height: 500px;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: 100%;
+  min-height: 510px;
+  height: 100%;
+  padding: 0rem 2rem;
+  order: 1;
+}
+
+.contactContainer {
+  max-width: 800px;
+  width: 100%;
+  min-height: 510px;
+  margin: 0rem 2rem;
+  order: 2;
+}
+
+.infoTitle {
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.contactColumn > div {
+  padding-bottom: 2rem;
+}
+
+.contactColumn > div > input {
+  color: var(--primary-color);
+}
+
+.contactColumn textarea {
+  color: var(--primary-color);
+}
+
+form input[type="submit"] {
+  background: none;
+  border: 1px solid black;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+form input:focus,
+textarea:focus {
+  outline: none !important;
+}
+
+.rows {
+  max-width: 650px;
+  width: 100%;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.rows h1 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+}
+
+.rows input {
+  border: 0px;
+  font-size: 0.8rem;
+}
+
+.contactTextarea {
+  max-width: 650px;
+  width: 100%;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+.contactTextarea p {
+  text-transform: uppercase;
+}
+
+textarea,
+input {
+  background-color: transparent !important;
+  color: var(--primary-color);
+}
+
+.contactTextarea textarea {
+  width: 100%;
+  height: 120px;
+  border: 0px;
+  font-size: 0.8rem;
+}
+
+.btn {
+  max-width: 135px;
+  min-height: 50px;
+  width: 100%;
+  background-color: var(--button) !important;
+  border-radius: 0.5rem;
+  text-decoration: none !important;
+  transition: 0.4s;
+  font-size: 0.9rem;
+}
+
+.icon svg path {
+  color: var(--button);
+}
+
+.icon p {
+  color: var(--primary-color);
+  margin: 0rem 0rem 0rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.icon {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+}
+
+.border {
+  max-width: 50px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--button);
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+
+.successMsg {
+  color: var(--green);
+  font-size: 1rem;
+}
+
+.successMsg svg path {
+  color: var(--green);
+}
+
+.errMsg {
+  color: var(--red);
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    margin: 10rem 0rem 0rem 0rem;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .infoContainer {
+    padding-top: 3rem;
+    max-width: 100%;
+    order: 2;
+    min-height: 700px;
+  }
+  .contactContainer {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .icon {
+    flex-direction: column;
+    text-align: center;
+  }
+  .icon p {
+    margin: 0rem;
+  }
+}

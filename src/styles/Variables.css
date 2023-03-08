@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #a7afca;
+
+  --table-primary-color: #ffffff;
+  --table-titles-bg-color: #1319325c;
+
+  --pagination-disabled-color: #000000;
+  --pagination-bg: #ffffff;
+  --border: #39405e;
+
+  --green-bg: #209c8b;
+  --rank-btn: #000000;
+  --green: #209c8b;
+  --red: #f00606;
+
+  --coinList-secondary-color: #808080;
+
+  --button: #1e59edc4;
+  --button-txt-color: #ffffff;
+
+  --footer-bg: #05081b;
+
+  --about-small-bg-color: #7061b29c;
+}

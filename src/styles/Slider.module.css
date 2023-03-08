@@ -1,0 +1,66 @@
+@import "Variables.css";
+
+.roadmapTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 8rem 2rem 0rem 2rem;
+  font-weight: bold;
+}
+
+.mySwiper {
+  width: 100%;
+  min-height: 350px;
+  padding: 0rem 1rem;
+  margin: 5rem 0rem;
+  cursor: grab;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  width: 100%;
+}
+
+.swiperWrapper {
+  font-size: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  margin-bottom: 1rem;
+}
+
+.icon svg {
+  font-size: 2.1rem;
+}
+
+.titleWrapper {
+  display: flex;
+}
+
+.year {
+  font-size: 1.1rem;
+}
+.title {
+  font-size: 1.1rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+}
+.text {
+  color: var(--secondary-color);
+  max-width: 370px;
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 990px) {
+  .roadmapTitle {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+}
